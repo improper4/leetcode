@@ -1,4 +1,4 @@
-public class SearchInSortedArr {
+public class SearchInRotatedArr {
     public int search(int[] A, int target) {
         int left = 0, right = A.length -1;
         while(left <= right){       // you must watch out the = operator.
