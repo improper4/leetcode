@@ -5,6 +5,7 @@ class Solution:
         max_step = 0
         for i in range(len(A) -1):
             if max_step == A[i] + i:
+            # if max_step < i:  #both if statement is OK
                 return False
             max_step = max(max_step, A[i] + i)
         return max_step >= len(A)-1
